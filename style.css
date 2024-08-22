@@ -134,6 +134,7 @@ a {
 .btn {
   display: inline-block;
   padding: 1.2rem 3.2rem;
+  margin-bottom: 2.5rem;
   background-color: var(--main-color);
   color: var(--white-color);
   text-transform: capitalize;
@@ -155,6 +156,7 @@ a {
   background-color: var(--bnt-hover-bg-color);
   box-shadow: var(--btn-box-shadow);
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 .btn:focus-visible,
@@ -294,8 +296,7 @@ main {
     #ebf3fe
   );
 }
-
-.custom-shape-divider-bottom-1696038172 {
+.custom-shape-divider-bottom-1724360801 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -305,16 +306,17 @@ main {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1696038172 svg {
+.custom-shape-divider-bottom-1724360801 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 12rem;
+  height: 90px;
 }
 
-.custom-shape-divider-bottom-1696038172 .shape-fill {
-  fill: #ffffff;
+.custom-shape-divider-bottom-1724360801 .shape-fill {
+  fill: #FFFFFF;
 }
+
 
 main .section-hero {
   height: 90vh;
@@ -322,6 +324,7 @@ main .section-hero {
   justify-content: center;
   align-items: center;
   /* background-color: var(--supporting-color); */
+  position: relative;
 }
 
 .section-hero .grid {
@@ -340,12 +343,13 @@ main .section-hero {
   }
 
   & .hero-heading {
-    font-size: 5.8rem;
-    line-height: 1.5;
-    initial-letter: -0.2rem;
+    font-size: 5.4rem;
+    line-height: 1.4;
+    /* initial-letter: -0.2rem; */
     text-transform: capitalize;
     color: #003b99;
     font-family: "Jost";
+    margin: 1rem 0;
   }
 
   & .hero-para {
@@ -357,7 +361,7 @@ main .section-hero {
 .section-hero img {
   width: 100%;
   height: auto;
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
 }
 
 /***** End Hero Section *****/
@@ -1004,7 +1008,7 @@ footer {
   }
 
   .section-hero img {
-    width: 90%;
+    width: 80%;
   }
 }
 

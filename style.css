@@ -389,12 +389,12 @@ main .section-hero {
 
   & p {
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #1f36b9;
   }
 
   & h3 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     text-transform: capitalize;
     margin: 0.6rem 0 1.6rem 0;
   }
@@ -416,6 +416,9 @@ main .section-hero {
       filter: drop-shadow(5px 8px 24px rgba(25, 76, 127, 0.2));
       -webkit-filter: drop-shadow(5px 8px 24px rgba(25, 76, 127, 0.2));
     }
+  }
+  & .extra-text a{
+    font-size: 1.6rem;
   }
 
   & img {

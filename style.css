@@ -500,7 +500,7 @@ main .section-hero {
 
 .section-why--choose .grid {
   gap: 9.6rem;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .why-choose--div {
@@ -516,7 +516,9 @@ main .section-hero {
 .section-why--choose .text-align--left .why-choose--div {
   align-items: start;
 }
-
+.choose-left-div .why-choose--div{
+  text-align: right;
+}
 .common-text--highlight {
   color: var(--main-color);
   width: 6rem;
@@ -1073,6 +1075,9 @@ footer {
     & .choose-right-div {
       order: 3;
     }
+  }
+  .choose-left-div .why-choose--div{
+    text-align: left;
   }
 
   .contact-title {

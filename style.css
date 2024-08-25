@@ -8,7 +8,7 @@
   font-family: "Urbanist", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -52,6 +52,7 @@ h6 {
 h1 {
   font-size: 3.2rem;
 }
+
 h2 {
   font-size: 3.2rem;
 }
@@ -74,6 +75,7 @@ li {
 a {
   color: #646cff;
   text-decoration: none;
+
   &:hover {
     color: #535bf2;
   }
@@ -92,16 +94,13 @@ a {
   padding: 9.6rem 2.4rem;
 }
 
-:is(
-    .section-extra-product,
-    .section-blog,
-    .section-policy,
-    .section-contact--homepage,
-    .section-why--choose,
-    .section-contact,
-    footer
-  )
-  .container:first-child {
+:is(.section-extra-product,
+  .section-blog,
+  .section-policy,
+  .section-contact--homepage,
+  .section-why--choose,
+  .section-contact,
+  footer) .container:first-child {
   padding: 6.4rem 0 2.4rem 0;
 }
 
@@ -194,6 +193,7 @@ textarea:focus-visible {
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
   }
+
   20% {
     transform: translateX(0);
     opacity: 1;
@@ -202,6 +202,7 @@ textarea:focus-visible {
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -225,6 +226,10 @@ textarea:focus-visible {
   & .sign_in_up {
     display: flex;
     gap: 3.2rem;
+
+    & a {
+      font-size: 1.6rem;
+    }
   }
 }
 
@@ -238,7 +243,8 @@ textarea:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem; /* we override the main container padding property  */
+  padding: 1.8rem;
+  /* we override the main container padding property  */
 }
 
 .section-navbar img {
@@ -269,6 +275,7 @@ textarea:focus-visible {
       transition: all 0.3s linear;
     }
   }
+
   & li a:hover {
     color: var(--main-color);
   }
@@ -287,15 +294,14 @@ main {
   position: relative;
   background-color: #d9e9ff;
 
-  background-image: linear-gradient(
-    to top right,
-    #3d86fa,
-    #4484fb,
-    #679eff,
-    #b3d2ff,
-    #ebf3fe
-  );
+  background-image: linear-gradient(to top right,
+      #3d86fa,
+      #4484fb,
+      #679eff,
+      #b3d2ff,
+      #ebf3fe);
 }
+
 .custom-shape-divider-bottom-1724360801 {
   position: absolute;
   bottom: 0;
@@ -417,7 +423,8 @@ main .section-hero {
       -webkit-filter: drop-shadow(5px 8px 24px rgba(25, 76, 127, 0.2));
     }
   }
-  & .extra-text a{
+
+  & .extra-text a {
     font-size: 1.6rem;
   }
 
@@ -516,9 +523,11 @@ main .section-hero {
 .section-why--choose .text-align--left .why-choose--div {
   align-items: start;
 }
-.choose-left-div .why-choose--div{
+
+.choose-left-div .why-choose--div {
   text-align: right;
 }
+
 .common-text--highlight {
   color: var(--main-color);
   width: 6rem;
@@ -577,15 +586,19 @@ main .section-hero {
   0% {
     background-color: #b3d0ff;
   }
+
   25% {
     background-color: #80b1ff;
   }
+
   50% {
     background-color: #4d91ff;
   }
+
   75% {
     background-color: #99c0ff;
   }
+
   100% {
     background-color: #3381ff;
   }
@@ -683,7 +696,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  padding: 6rem 0;
+  padding: 6rem 4rem;
 }
 
 .footer-container h4 {
@@ -738,6 +751,11 @@ footer {
   border-top: 1px solid var(--secondaryColor);
   padding: 1.6rem 0;
   color: var(--secondaryColor);
+
+  &:hover p {
+    color: #797979;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 /***** End Footer Section *****/
@@ -857,13 +875,15 @@ footer {
     font-weight: bold;
   }
 }
+
 /**** Our Home product section Ends  ****/
 
 #cartValue {
   background-color: var(--buttonColor);
   color: #fff;
   padding: 1rem 2rem;
-  &:after{
+
+  &:after {
     border-bottom: 0rem;
   }
 }
@@ -909,6 +929,7 @@ footer {
     border-right: 0.1rem solid #d8d8d8;
     border-left: 0.1rem solid #d8d8d8;
     border-radius: 0;
+
     &:last-child {
       border-bottom: 0.1rem solid #d8d8d8;
     }
@@ -918,7 +939,8 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 1fr 1fr;
-    align-items: center; /* margin: auto; */
+    align-items: center;
+    /* margin: auto; */
     gap: 3.2rem;
   }
 
@@ -1007,29 +1029,26 @@ footer {
 
 /* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
 
-@media (width <= 1380px) {
+@media (width <=1380px) {
   html {
     font-size: 56.25%;
   }
 
   .section-hero img {
-    width: 80%;
+    width: 90%;
   }
 }
 
-@media (width <= 1220px) {
+@media (width <=1220px) {
   html {
     font-size: 54%;
   }
 
-  :is(
-      .section-about,
-      .section-blog,
-      .section-course,
-      .section-contact--homepage,
-      .section-why--choose
-    )
-    .grid {
+  :is(.section-about,
+    .section-blog,
+    .section-course,
+    .section-contact--homepage,
+    .section-why--choose) .grid {
     gap: 6.4rem;
   }
 
@@ -1039,7 +1058,7 @@ footer {
   }
 }
 
-@media (width <= 1100px) {
+@media (width <=1100px) {
   .grid-four--cols {
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   }
@@ -1055,6 +1074,7 @@ footer {
     & .choose-left-div {
       order: 2;
     }
+
     & .choose-center-div {
       order: 1;
 
@@ -1072,11 +1092,13 @@ footer {
         display: none;
       }
     }
+
     & .choose-right-div {
       order: 3;
     }
   }
-  .choose-left-div .why-choose--div{
+
+  .choose-left-div .why-choose--div {
     text-align: left;
   }
 
@@ -1090,7 +1112,7 @@ footer {
   }
 }
 
-@media (width <= 980px) {
+@media (width <=980px) {
   body {
     padding: 0 0.6rem;
   }
@@ -1136,6 +1158,7 @@ footer {
   .section-hero .section-hero-image {
     display: grid;
     place-items: center;
+
     & figure {
       display: grid;
       place-items: center;
@@ -1152,7 +1175,7 @@ footer {
   }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .grid-two--cols {
     grid-template-columns: 1fr;
   }
@@ -1232,4 +1255,5 @@ footer {
     padding: 6.4rem 0rem 2.4rem 0rem;
   }
 }
+
 /***** End  media queries Section *****/

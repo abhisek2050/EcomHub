@@ -97,44 +97,44 @@
   <!-- end hero-section -->
 
   <!-- start extra product section -->
-    <section class="section-extra-product">
-      <div class="container grid grid-three--cols">
-        <div class="div-extra grid grid-two--cols">
-          <div class="extra-text">
-            <p>new year sale</p>
-            <h3>get and extra 50% off</h3>
-            <a href="#">show now</a>
-          </div>
-          <div class="extra-img extra-laptop">
-            <img src="./public/images/laptop.png" alt="">
-          </div>
+  <section class="section-extra-product">
+    <div class="container grid grid-three--cols">
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">show now</a>
         </div>
-        <div class="div-extra grid grid-two--cols">
-          <div class="extra-text">
-            <p>new year sale</p>
-            <h3>40% discounts on speaker</h3>
-            <a href="#">show now</a>
-          </div>
-          <div class="extra-img extra-laptop">
-            <img src="./public/images/headphoneEcom.png" alt="">
-          </div>
-        </div>
-        <div class="div-extra grid grid-two--cols">
-          <div class="extra-text">
-            <p>new year sale</p>
-            <h3>get and extra 50% off</h3>
-            <a href="#">show now</a>
-          </div>
-          <div class="extra-img extra-laptop">
-            <img src="./public/images/mobiles.png" alt="">
-          </div>
+        <div class="extra-img extra-laptop">
+          <img src="./public/images/laptop.png" alt="">
         </div>
       </div>
-    </section>
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>40% discounts on speaker</h3>
+          <a href="#">show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./public/images/headphoneEcom.png" alt="">
+        </div>
+      </div>
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./public/images/mobiles.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- end extra product section -->
 
   <!-- start section policy -->
-   <section class="section-policy">
+  <section class="section-policy">
     <div class="container grid grid-four--cols">
       <div class="div-policy">
         <div class="icons">
@@ -174,15 +174,67 @@
       </div>
 
     </div>
-   </section>
+  </section>
   <!-- end section policy -->
 
+  <!--start our products section  -->
+  <section class="section-products">
+    <div class="container">
+      <div class="section-common-heading">checkout Abhi Store</div>
+    </div>
+    <section class="container">
+      <div id="productContainer"></div>
+    </section>
+  </section>
+
+  <!-- start Product Template Section -->
+   <template id="productTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+          <div class="imageContainer">
+            <img src="" alt="" class="productImage">
+          </div>
+          <h2 class="productName"></h2>
+          <div class="productRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="productDescription"></p>
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+          <div class="productStockElement">
+            <p class="productProperty">Total Stocks Available:</p>
+            <p class="productStock"></p>
+          </div>
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(Pieces)</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="prductQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+          </button>
+        </article>
+      </div>
+   </template>
+  <!-- end Product Template Section -->
+  <!--end our products section  -->
+
   <!-- start why choose us section -->
-   <section class="section-why--choose">
+  <section class="section-why--choose">
     <div class="container">
       <h2 class="section-common--heading">Why Choose Abhi Store</h2>
       <p class="section-common--subheading">
-        It isn't only improving the business side, 
+        It isn't only improving the business side,
         but also the customer side since it helps enhance the eCommerce customer experience.
       </p>
     </div>
@@ -253,11 +305,11 @@
         </div>
       </div>
     </div>
-   </section>
+  </section>
   <!-- end why choose us section -->
 
   <!-- start footer section -->
-   <footer class="section-footer">
+  <footer class="section-footer">
     <div class="footer-container">
       <div class="content_1">
         <img src="./public/images/abhi-store-high-resolution-logo-transparent.png" alt="logo">
@@ -272,7 +324,7 @@
         <a href="#">Computer Store</a>
         <a href="#">Laptop Store</a>
         <a href="#">Accessories</a>
-        <a href="#">Sales &  Discount</a>
+        <a href="#">Sales & Discount</a>
       </div>
       <div class="content_3">
         <h4>EXPERIENCE</h4>
@@ -298,7 +350,7 @@
         <p>Design and Code by Abhisek Mishra</p>
       </div>
     </div>
-   </footer>
+  </footer>
   <!-- end footer section -->
 
   <script type="module" src="/main.js"></script>
